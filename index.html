@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+
     <div class="body-content">
         <header>
             <div class="header-background">
@@ -15,18 +16,23 @@
             </div>
             <div class="header-navbar">
                 <div class="navbar">
-                    <div class="navbar-menu">
-                        <div class="text-link"><a href="">Home</a></div>
-                        <div class="text-link"><a href="">Product</a></div>
-                        <div class="text-link"><a href="">Pricing</a></div>
-                        <div class="text-link"><a href="">About</a></div>
-                        <div class="text-link"><a href="">contact</a></div>
-                    </div>
+                    <ul class="navbar-menu " id="navbar-dropdown">
+                        <li class="text-link"><a href="">Home</a></li>
+                        <li class="text-link"><a href="">Product</a></li>
+                        <li class="text-link"><a href="">Pricing</a></li>
+                        <li class="text-link"><a href="">About</a></li>
+                        <li class="text-link"><a href="">contact</a></li>
+                    </ul>
+
                     <div class="navbar-center">
                         <div class="navbar-logo">
                             <img src="https://s3-alpha-sig.figma.com/img/dee8/75d6/947120449f1b8aa45044619ccdd5e98a?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gBH6uThArwzJZLn5gLNyUPBUAgGkeceW0GK53Kq37viVhNyR-jEqwJwjimZDZOlLu1GR3HqNN8wneyKZq4-NgDtyueqtnLRUvAaE4XKlWSYyKgKCFGQ5pxRhFR0XHJCfanx9rY3ug96pJ~K4TQ-6nzIpL67d75oLJzkR4vGqWJJq14WY68KMV3BupavIGBc~mHvAJnJOvkBO-RbatHQb1JQ9VEZBKV-zRqje45AoG1C0hec-mEpgQkqoBxlBzU4zw5aibXHUBEX2Dy-rI76eRJsZ1PQfbjBKayAHrdezc1eKFdznoD1apCjmwaQoiJ9NdLZA-842gsSf~tJ2AqJqIQ__" alt="">
                         </div>
                     </div>
+                    <a style="text-decoration: none;" href="javascript:void(0);" 
+                        class="icon" onclick="myFunction()">
+                        <i class="material-icons sort-icon" style="font-size:36px; text-decoration: none;">sort</i>
+                    </a>
                     <div class="navbar-right">
                         <div class="navbar-social-media">
                             <a href="" class="fa fa-twitter" style="font-size: 33px"></a>
@@ -34,8 +40,9 @@
                             <a href="#" class="fa fa-linkedin" style="font-size: 32px"></a>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
+
             <div class="header-start">
                 <div class="header-text-container">
                     <h1>The best products <br>
@@ -51,6 +58,8 @@
             </div>
 
         </header>
+        <script src="index.js"></script>
+
         <main>
             <div class="main-content">
                 <div class="features">

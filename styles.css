@@ -31,6 +31,17 @@ header {
     width: 100%;
     height: 156px;
     z-index: 1000;
+    transition: background-color 0.3s, height 0.3s, box-shadow 0.3s;
+}
+
+.header-navbar.scrolled {
+    height:80px;
+    background-color: #7272723f; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+    height: 80px;
 }
 
 .navbar {
@@ -46,8 +57,7 @@ header {
 
 .navbar-menu {
     width: 437px;
-    height: 48px;
-    margin-left: 40px;
+    height: 8px;
     gap: 21px;
     display: flex;
     flex-direction: row;
@@ -56,9 +66,10 @@ header {
 
 .text-link {
     width: 63px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
     align-items: center;
 }
 
@@ -181,7 +192,6 @@ header {
     display: none;
 }
 
-
 .header-text-container h4 {
     width: 766px;
     height: 80px;
@@ -226,8 +236,11 @@ header {
     line-height: 20px;
     letter-spacing: 0.2px;
     text-align: center;
-    color: #FFFFFF;
-    
+    color: #FFFFFF; 
+}
+
+.icon {
+    display: none;
 }
 
 /* features */
@@ -333,7 +346,7 @@ header {
 }
 
 .features-video-screen img{
-    width: 1177.34px;
+    max-width: 1177.34px;
     height: auto;
     margin-top: -50px;
     text-align: center;
@@ -342,7 +355,7 @@ header {
 .features-video-screen button {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
     width: 187.4px;
     height: 187.4px;
@@ -1908,8 +1921,9 @@ footer {
 @media (max-width:767px) {
     /* header */
     .navbar {
-        width: 418px;
+        width: 100%;
         height: 112px;
+        justify-content: space-between;
     }
 
     .header-navbar {
@@ -1948,6 +1962,49 @@ footer {
         display: block;
         width: 265px;
         height: 80px;
+    }
+
+    .navbar-menu {
+        display: flex;
+        position: fixed;
+        top: 10%;
+        right: 100%;
+        width: 40%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        transition: left 0.3s ease;
+        z-index: 998;
+        padding-left: 40px;
+    }
+
+    .sort-icon {
+        transform: scaleX(-1);
+        color:white;
+    }
+
+    .navbar-menu.responsive {
+        right: 0;
+        margin-right: 2rem;
+        background-color: #0000004b;
+        height: 330px;
+        width: 100px;
+    }
+    
+    .navbar-menu.responsive li {
+        margin: 10px 0;
+    }
+
+    .icon {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        justify-content: flex-end;
+        right: 40px;
+        z-index: 999;
+        color: #fff;
+        font-size: 24px;
     }
 
     /* features */
