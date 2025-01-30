@@ -437,6 +437,7 @@ header {
     max-height: 658.3px;
     overflow: hidden;
     border-radius: 44.81px;
+    box-shadow: 0px 8.15px 63.14px 0px #00000026;
 }
 
 .features-video-screen img{
